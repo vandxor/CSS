@@ -47,5 +47,11 @@ Cascading means a series of events, processes, or items happening in successionâ
 3. Source Order
 4. Inheritance
 
+ways to add css:
+
+inline
+internal
+external (best)
+
 
 
