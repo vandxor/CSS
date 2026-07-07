@@ -1,0 +1,51 @@
+html is skeleton
+strucutre
+description
+semantics
+
+CSS is Cascading style sheets. enhances page ka appearance.
+
+what is style sheet?
+
+we got some properties and we give values to em in a particular document like
+
+bg color : yellow
+border : 2
+color : yellow
+etc
+
+this doc is called style sheet.
+
+now tf is cascading?
+
+suppose theres a para, and u style it in 3 diff ways
+
+bg color : yellow
+bg color : red
+bg color : blue
+
+ab kaunsi prop pick hogi? it depends on 4 properties
+
+a waterfall or series of waterfalls over rocks
+
+-------------------------------------------------------------------------------------------------------------------
+cascade
+कैˈस्‍केड्‌
+verb
+gerund or present participle: cascading
+to fall or hang down, especially in large amounts or in stages.
+Water cascaded from the roof.
+
+Cascading means a series of events, processes, or items happening in succession—where the outcome of one stage automatically triggers or flows into the next.
+-------------------------------------------------------------------------------------------------------------------
+
+
+4 factors are :
+
+1. Importance and Origin
+2. Specificity
+3. Source Order
+4. Inheritance
+
+
+
