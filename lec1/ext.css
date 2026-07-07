@@ -1,0 +1,27 @@
+/* for external css, we gotta follow 2 rules::after
+1. create a css file
+2. you gotta link it w html file 
+
+in head tag*/
+
+h1{
+  font-size: smaller;
+  text-align: center;
+}
+
+/* now if we compete inline vs internal vs external, who gonna win?  */
+
+p{
+  background-color: aquamarine;
+}
+
+/* blue violet aara tha cuz imp tag kiya tha, lets remove it 
+
+jeet toh inline css ki hi hori hai, but for internal and external, order matters.
+
+we tagged external ekdam last in head tag, isliye ye aquamarine aya.
+
+agar upar karte toh blue violet aata, this is what sequencing means  ig
+
+
+*/
