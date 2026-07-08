@@ -19,9 +19,9 @@ p{
 
 jeet toh inline css ki hi hori hai, but for internal and external, order matters.
 
-we tagged external ekdam last in head tag, isliye ye aquamarine aya.
+we tagged external ekdam last in head tag, and style tag ke niche isliye ye aquamarine aya.
 
-agar upar karte toh blue violet aata, this is what sequencing means  ig
+agar style tag ke upar karte toh blue violet aata, this is what sequencing means  ig
 
 
 */
