@@ -1,0 +1,129 @@
+<!-- diff ways to use colours
+
+1. named
+2. rgb values
+3. hexadecimal value
+4. hsl - hue saturation light
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    #first{
+
+      /* named colours */
+
+      background-color: yellow;
+      color: brown;
+
+
+    }
+
+    #second{
+
+      /* rgb values */
+      /* background-color: rgb(0, 0, 0);     black */
+
+      /* isme red. green and blue ka componet zero hai, values 0 se 255 tak jaa sakti hai */
+
+      color: rgb(255, 255, 255);
+      background-color: rgb(100, 109, 192);
+    }
+
+    #third{
+
+      /* rgba : alpha value */
+      /* background-color: rgba(66,176,86,0); */
+
+      /* kuch nhi ayega cuz alpha ki value zero hai */
+
+       background-color: rgba(66, 176, 86, 0.352);
+
+       /* alpha ki value decides ki transparency kitni hai, its that transparency bar beside colours bar*/
+    }
+
+    .firstclass{
+
+      /* hexadecimal values 
+      
+      
+      search hexadecimal colour picker on google*/
+
+      background-color: #ffffff;
+
+      /* start ke 2 fs show red ka component, middle wale shows green ka component and then lasrt walwe show blue ka component */
+
+      background-color: #ffab23;
+
+      background-color: #ffab2389;
+
+      /* last two is alpha value, 00 means colour nhi dikhega, full transaprency */
+
+
+
+    }
+
+    /* hsl : hue, saturation, lightness
+    
+    hue : 0 or 360 is red. 120 is green, 240 is blue. its degree on colour wheel
+
+    saturation: is intensity of color, from 0 to 100%
+
+    100 is full colour
+    50 is half color, half gray
+    0 is full gray
+
+    light : how much light u want to give to colour
+
+    0 means dark, no ligt
+    50 is 50% light, neither dark, nor light
+    100 is white, full light
+
+    
+    
+    
+    
+    
+    */
+
+    #four{
+
+      background-color: hsl(0, 100%, 50%) ;
+      background-color: hsl(120, 100%, 50%) ;
+      background-color: hsl(240, 100%, 50%) ;
+
+      /* hsla is transaprewncy */
+
+      /* 0 is red */
+    }
+
+
+
+/* hexa and rgb is most used */
+
+
+
+  </style>
+</head>
+<body>
+
+  
+  <h2>Welcome to CSS</h2>
+  <p id="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quo hic ex quibusdam maxime quia! Minus cumque accusantium earum porro?</p>
+
+  <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quidem saepe assumenda libero dolore. Quidem dignissimos, atque quibusdam ipsa aperiam eveniet ipsum aut excepturi dolore incidunt quisquam quas dolor. Commodi.</p>
+
+  <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis est ad repudiandae, at eveniet et vero, eius illo architecto nam consectetur magni dolorum eaque aperiam alias nesciunt a dolor atque nobis placeat, dolore saepe similique? Ad, adipisci dolorum. Quod, aliquid.</p>
+
+  <p class="firstclass">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos ad maxime et vero ducimus expedita quae delectus qui, eos deserunt, nobis illum atque ipsum!</p>
+
+  <p id="four">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus fuga sunt vero omnis iure. Repellendus eveniet amet culpa est, cupiditate expedita doloremque deleniti, minima inventore maxime aut recusandae, dicta maiores tenetur quae corporis? Fugiat est hic sequi explicabo rerum cupiditate?</p>
+  
+</body>
+</html>
