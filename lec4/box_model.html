@@ -8,7 +8,7 @@
 
 
  <style>
-  h1{
+  #one{
     background-color: aquamarine;
     /* border-style: dashed;
     border-width: 2px;
@@ -32,8 +32,33 @@
      border-left: solid pink 3px;
   }
 
+  #two{
+    background-color: aquamarine;
+
+    border: solid black 3px;
+    /* ye pure window ki width cover karta hai, but i dont want that */
+    width: 350px;
+
+    /* it specifies elem width */
+
+    height: 200px;
+
+  }
+
+  span{
+
+    background-color: aquamarine;
+    border: solid black 3px;
+    width: 350px;
+
+
+  }
+
   .first{
     background-color: blanchedalmond;
+    border: solid black 3px;
+    width: 350px;
+    height: 200px;
 
     
     
@@ -42,10 +67,14 @@
 
   .second{
     background-color: beige;
+    border: solid black 3px;
+    width: 350px;
   }
 
   .third{
     background-color: yellow;
+    border: solid black 3px;
+    width: 350px;
   }
 
 
@@ -63,7 +92,11 @@
 <body>
 
 
-<h1>Welcome to CSS</h1>
+<h1 id="one">Welcome to CSS</h1>
+
+<h1 id="two">Welcome to CSS</h1>
+
+<span>hii vandough</span>
 
 <p class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sit earum culpa doloribus eaque tempore, dolorum consectetur quaerat dolores accusantium nulla repellat vitae! Possimus quis laboriosam natus vel reiciendis optio dolorem voluptatem numquam cumque deleniti. Sint nobis libero accusamus eius!</p>
 
