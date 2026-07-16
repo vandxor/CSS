@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+
+
+
+ <style>
+  #one{
+    background-color: aquamarine;
+    /* border-style: dashed;
+    border-width: 2px;
+    border-color: brown; */
+
+    /* short notation */
+
+    border:solid blue 2px; 
+
+    /* rounding of corners */
+    /* border-radius: 5px; */
+
+    /* ek hi corner ko round karna chahte hai */
+
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    /* sirf ek hi direction mein border chaiye */
+     border-top: solid yellow 4px;
+     border-right: solid black 7px;
+     border-left: solid pink 3px;
+  }
+
+  #two{
+    background-color: aquamarine;
+
+    border: solid black 3px;
+    /* ye pure window ki width cover karta hai, but i dont want that */
+    width: 350px;
+
+    /* it specifies elem width */
+
+    height: 200px;
+
+  }
+
+  span{
+
+    background-color: aquamarine;
+    border: solid black 3px;
+    width: 350px;
+
+    /* width toh add hi nhi hui */
+
+    height: 200px;
+
+    /* height bhi nhi */
+
+    /* bcz its a inline elem, its size depends only on its text content, it doesnt start on new line */
+
+
+  }
+
+  .first{
+    background-color: blanchedalmond;
+    border: solid black 3px;
+    width: 350px;
+    height: 200px;
+
+    
+    
+   
+  }
+
+  .second{
+    background-color: beige;
+    border: solid black 3px;
+    width: 350px;
+  }
+
+  .third{
+    background-color: yellow;
+    border: solid black 3px;
+    width: 350px;
+  }
+
+
+ </style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<h1 id="one">Welcome to CSS</h1>
+
+<h1 id="two">Welcome to CSS</h1>
+
+<span>hii vandough</span>
+
+<p class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sit earum culpa doloribus eaque tempore, dolorum consectetur quaerat dolores accusantium nulla repellat vitae! Possimus quis laboriosam natus vel reiciendis optio dolorem voluptatem numquam cumque deleniti. Sint nobis libero accusamus eius!</p>
+
+<p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam, atque voluptates, cum sunt necessitatibus pariatur laboriosam qui enim veniam quis neque esse quo sequi doloremque ex obcaecati nobis recusandae perferendis consectetur numquam perspiciatis. Quasi odit dignissimos repudiandae nulla amet, animi, recusandae rem facilis, sunt quae numquam dolore temporibus quam!</p>
+
+<p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto saepe consequuntur quibusdam inventore commodi totam quisquam id vel. Minima exercitationem delectus deserunt nemo est!</p>
+
+
+  
+</body>
+</html>
