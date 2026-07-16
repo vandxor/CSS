@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+
+
+
+
+
+
+  
+ <style>
+
+  /* UNIVERSAL SELECTOR
+
+  *{
+
+    padding: 0px;
+    margin : 0px;
+
+
+  }
+   */
+
+  #two{
+    background-color: aquamarine;
+
+    border: solid black 3px;
+    /* ye pure window ki width cover karta hai, but i dont want that */
+    width: 350px;
+
+    /* it specifies elem width */
+
+    
+  }
+
+  span{
+
+    background-color: aquamarine;
+    border: solid black 3px;
+    width: 350px;
+
+    /* width toh add hi nhi hui */
+
+    
+
+    /* height bhi nhi */
+
+    /* bcz its a inline elem, its size depends only on its text content, it doesnt start on new line */
+
+
+  }
+
+  .first{
+    background-color: blanchedalmond;
+    border: solid black 3px;
+    width: 350px;
+    /* padding: 50px; 
+     /* ONE   
+    har direction mein add hota hai */
+    /* margin: 20px; */
+     */
+    
+
+    
+    
+   
+  }
+
+  .second{
+    background-color: beige;
+    border: solid black 3px;
+    width: 350px;
+    /* margin-bottom: 50px; */
+
+    /*
+
+    TWO
+    
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right : 30px;
+    padding-bottom: 40px; */
+    /* margin-top: 40px;
+    margin-left: 100px;
+
+
+    padding : 15px 25px 35px 45px; */
+
+    /* THREE */
+
+    /* top right bottom left */
+
+
+
+
+  }
+
+  .third{
+    background-color: yellow;
+    border: solid black 3px;
+    width: 350px;
+
+    
+    /* padding : 30px 60px; */
+
+    /* 
+    
+    FOUR
+    
+    topbottom  leftright;
+
+     topbottom 30,  leftright 60
+     
+     */
+
+     /* same shi with margin */
+
+
+  }
+
+  /* UNIVERSAL SELECTOR */
+
+  *{
+
+    padding: 0px;
+    margin : 0px;
+
+
+  }
+
+  /* ok upar neeche doesnt matter, but it applies on all elems jiski koi props specifically mention nhi ki hai
+  
+  isse sab gaps hat jaenge, all default gaps*/
+  
+
+
+ </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+  <!-- render = tranforming raw code into visual webpage, basically web page dekhna -->
+
+<!-- it js says koi bhi content aap render karoge toh toh aapka browese aapke content ko (text, circular image,triangular img, shape doesnt matter, kuch bhi ho)
+ 
+
+oh toh aapka browese aapke content ko ek rectangle ke andar hi render karne wala hai, keep this in mind while designing stuff
+
+jo bhi website pe dekhoge, woh sab ek box mein render hua hai. button, text, adds etc.
+
+ek box model ke 4 parts :
+
+┌─────────────────────────────────────────────────────────┐
+│                         MARGIN                          │
+│   ┌─────────────────────────────────────────────────┐   │
+│   │                     BORDER                      │   │
+│   │   ┌─────────────────────────────────────────┐   │   │
+│   │   │                PADDING                  │   │   │
+│   │   │   ┌─────────────────────────────────┐   │   │   │
+│   │   │   │      CONTENT (Text / Image)     │   │   │   │
+│   │   │   └─────────────────────────────────┘   │   │   │
+│   │   │                                         │   │   │
+│   │   └─────────────────────────────────────────┘   │   │
+│   │                                                 │   │
+│   └─────────────────────────────────────────────────┘   │
+│                                                         │
+└─────────────────────────────────────────────────────────┘
+
+
+content layer ke bahar padding, uske bahr border and uske bahr margin.
+
+padding kya hota hai?
+padding is space btwn border and content. ek din chipak ke thodi rehta hai, theres some space btwn em
+
+padding zero bhi ho sakti hai
+
+-->
+
+
+<h1 id="two">Welcome to CSS</h1>
+
+<span>hii vandough</span>
+
+<p class="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sit earum culpa doloribus eaque tempore, dolorum consectetur quaerat dolores accusantium nulla repellat vitae! Possimus quis laboriosam natus vel reiciendis optio dolorem voluptatem numquam cumque deleniti. Sint nobis libero accusamus eius!</p>
+
+<p class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ullam, atque voluptates, cum sunt necessitatibus pariatur laboriosam qui enim veniam quis neque esse quo sequi doloremque ex obcaecati nobis recusandae perferendis consectetur numquam perspiciatis. Quasi odit dignissimos repudiandae nulla amet, animi, recusandae rem facilis, sunt quae numquam dolore temporibus quam!</p>
+
+<p class="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto saepe consequuntur quibusdam inventore commodi totam quisquam id vel. Minima exercitationem delectus deserunt nemo est!</p>
+
+<!-- margins 
+ 
+baaki content mein  and apne dabbe mein distance badta hai
+its like aura of the box, order ke bahr
+eveything stays dur at the distance u mention
+
+when u write margin:10px
+
+har direction se distance badta hai, top bottom right left
+
+
+u can specify alag alag bhi
+
+
+
+
+
+
+
+-->
+
+
+<!-- u see all this very clearly using inspect developer tool -->
+
+
+
+<!-- GOOD PRACTICES:
+
+
+acche codes mein universal selector mein margin and padding ko by default zero rakha jata hai
+
+left mein thoda sa margin hota hai, but hame woh bhi nhi chaiye
+
+theres this thing called universal selector ki jitne bhi tags hai, jitne bhi elems hai, sabko ye props allot honge
+
+sabhi ke upar ye propeties lagoo hongi
+
+youve seen id selector, class selector etc but ts universal
+
+syntax:
+
+*{
+
+  }
+ 
+
+
+
+
+
+-->
+  
+</body>
+</html>
